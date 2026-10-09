@@ -1,0 +1,30 @@
+{
+  "name": "Calendario dell'Avvento delle Storie",
+  "short_name": "Avvento Storie",
+  "description": "Un calendario dell'avvento digitale con una nuova storia magica ogni giorno.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#1a472a",
+  "theme_color": "#b32424",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "https://picsum.photos",
+      "type": "image/jpeg",
+      "sizes": "192x192",
+      "purpose": "any"
+    },
+    {
+      "src": "https://picsum.photos",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "any"
+    },
+    {
+      "src": "https://picsum.photos",
+      "type": "image/jpeg",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <link rel="manifest" href="./manifest.json">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <title>Calendario dell'Avvento delle Storie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>🎄 Il Mio Calendario dell'Avvento 🎅</h1>
+        <p>Apri una casella ogni giorno e scopri una magica storia di Natale!</p>
+    </header>
+
+    <main class="calendar-grid" id="calendarGrid">
+        <!-- Generato via JavaScript -->
+    </main>
+
+    <!-- Overlay per la storia -->
+    <div class="overlay" id="storyOverlay">
+        <div class="overlay-content">
+            <span class="close-btn" id="closeBtn">&times;</span>
+            <h2 id="overlayTitle">Titolo della Storia</h2>
+            <div id="overlayBody">Testo della storia...</div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+<script>
+  if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+      navigator.serviceWorker.register('./sw.js')
+        .then(reg => console.log('Service Worker registrato con successo!', reg))
+        .catch(err => console.error('Errore nella registrazione del Service Worker:', err));
+    });
+  }
+</script>
+
+</body>
+</html>
