@@ -9,19 +9,19 @@
   "orientation": "portrait-primary",
   "icons": [
     {
-      "src": "https://picsum.photos",
+      "src": "icon.png",
       "type": "image/jpeg",
       "sizes": "192x192",
       "purpose": "any"
     },
     {
-      "src": "https://picsum.photos",
+      "src": "icon.png",
       "type": "image/jpeg",
       "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "https://picsum.photos",
+      "src": "icon.png",
       "type": "image/jpeg",
       "sizes": "512x512",
       "purpose": "maskable"
